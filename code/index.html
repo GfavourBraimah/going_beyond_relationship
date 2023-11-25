@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="website icon" type="jpg"
+     href="./images/web ic.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/9aac08e97d.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Epilogue&family=Inter:wght@300;500&family=Permanent+Marker&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Epilogue&family=Inter:wght@300;500&family=Nunito+Sans:opsz,wght@6..12,300&family=Permanent+Marker&family=Playfair+Display:ital,wght@1,500&family=Roboto:wght@500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Epilogue&family=Inter:wght@300;500&family=Permanent+Marker&family=Roboto:wght@500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+  <title>Going beyond relationship</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div id="app">
+  <header>
+    <nav>
+      <div class="logo" @click="refreshPage" ><h5>going_beyond_relationship</h5></div>
+      <div class="openMenu" @click="showMenu"><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu" :class="{ active: isMenuOpen }">
+        <li v-for="(link, index) in links" :key="index">
+          <a :href="link.url">{{ link.text }}</a>
+        </li>
+        <div class="closeMenu" @click="closeMenu"><i class="fa fa-times"></i></div>
+        <span class="icons">
+         
+          <a href="https://chat.whatsapp.com/De7rsRX3nt2KRJdq7XFkIR"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://t.me/+Y1ogf_mqOgA2NDRk"><i class="fab fa-telegram"></i></a>
+          <a href="https://instagram.com/going_beyond_relationship1?igshid=OGQ5ZDc2ODk2ZA=="><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/chaya.samuel.1"><i class="fab fa-facebook"></i></a>
+        </span>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="blur">
+  <div class="strapline-container">
+    
+    <div class="strapline-text">
+     
+      <h2 class="go">GOING BEYOND RELATIONSHIP</h2>
+      <div con>
+        <h3 class="matt">Mathew 6:33</h3>
+      </div>
+     
+       
+       
+        <p class="kng">KINGDOM APPROACH TO DATING RELATIONSHIP AND MARRIAGE</p>
+    
+  </div>
+  </div>
+
+ <section class="about-section">
+    <div class="about-left">
+      <h2 class="tittle">ABOUT</h2>
+      <img class="person" :src="personImage" alt="Person Image">
+
+    </div>
+    <div class="about-right">
+     
+      <a name="about"></a>
+      <p>
+        Enter the realm of Going Beyond Relationship, curated by Priscilla Eziwan—Kenya Certified Christian <br>
+        Marriage and Family Care counselor, content creator, Christian leader, and podcast host. Three pillars define our journey:
+<br>
+
+1. Understanding God's Will for Relationships:
+Priscilla, a beacon of wisdom, guides to uncover the divine blueprint for enduring and joy-filled connections by aligning with God's will.
+<br>
+2. Discovering God's Assignment and Purpose:
+Beyond relationships, embark on a profound journey of self-discovery. Pricilla encourages individuals to unearth their unique 
+life assignment, fostering personal growth and connection to purpose.
+<br>
+3. Submission and Surrender to God's Will:
+Our platform spotlights the transformative power of submission. By entrusting relationships, marriages, and lives to God,
+ we unlock doors to divine guidance and abundant blessings.
+
+At Going Beyond Relationship, we believe young hearts can make informed decisions. Through prayer, preparation, and a commitment
+ to understanding God's will, we empower individuals to embark on a journey of fulfilling connections. Join us in this inspiring 
+ expedition where faith, relationships, and purpose converge. Pricilla Eziwan invites you to explore your potential and the beauty
+  that awaits when you dare to go beyond. Welcome to a community where love, faith, and purpose intersect—Welcome to Going Beyond Relationship.
+
+
+
+
+
+      </p>
+    </div>
+  </section>
+<section class="service-section">
+  <a name="service"></a>
+  <h2 class="service">{{ service }}</h2>
+  <p class="service-note">{{ serviceNote }}</p>
+  <div v-for="(service, index) in services" :key="index" class="grid-item" :id="'grid-' + (index + 1)">
+    
+    
+    <img class="sec-img" :src="service.image" alt="Service Image" @click="toggleServiceDescription(index)">
+    
+    <br>
+    <h3 class="des">{{ service.name }}</h3>
+    <p class="des" v-show="service.showDescription">{{ service.description }}</p>
+    <br>
+    <a :href="service.url">
+      <button class="btn">{{ btnText }} {{ service.name }}</button>
+    </a>
+  </div>
+</section>
+
+
+  <section class="podcast-section">
+    <h2 class="podcast">{{ podcast }}</h2>
+    <p class="podcast-note">{{ podNote }}</p>
+    <div v-for="(podcast, index) in podcasts" :key="index" class="grid-item">
+      <img class="sec-img"   :src="podcast.image" alt="Podcast Image">
+      <br>
+      <h4 class="des">{{ podcast.name }}</h4>
+      <br>
+      <button class="btn" @click="togglePodcastDescription(index)">
+        {{ podcast.showDescription ? 'Show less' : 'Show more' }}
+      </button>
+      <div v-if="podcast.showDescription">
+        <p class="des">{{ podcast.description }}</p>
+        <br>
+        <a :href="podcast.url" target="_blank">
+          <button class="btn">Listen Now</button>
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  <footer>
+    
+    <h1 style="background-color:  #B37741; color: aliceblue;   font-family: 'DM Serif Display', serif;
+    text-align: center;">CONTACT</h1>
+    <section id="contact">
+      <a name="contact"></a>
+      
+      <!-- Contact Section -->
+      <div class="contact-section">
+        <!-- Div 1: More Links to Products -->
+        <div class="contact-div">
+          <h3>More Links to Products</h3>
+          <ul>
+            <li><a href="https://selar.co/m/priscilla_1">Discover More Products</a></li>
+            <li><a href=" https://mainstack.me/gbr">Explore Our Services</a></li>
+            <li><a href="https://anchor.fm/priscilla-eziwan">Listen to Our Podcasts</a></li>
+          </ul>
+        </div>
+  
+        <!-- Div 2: Blog/Articles -->
+        <div class="contact-div">
+          
+          <h3>Blog/Articles</h3>
+          <ul>
+            <li><a href="http://goingbeyondrelationships.wordpress.com/">Latest Articles</a></li>
+          
+          </ul>
+        </div>
+  
+        <!-- Div 3: WhatsApp Button -->
+        <div class="contact-div">
+          <h3>Talk to Us</h3>
+          <button @click="openAdminWhatsAppChat">Book for Consultation</button>
+        </div>
+        
+  
+        <!-- Div 4: Social Media Icons -->
+        <div class="contact-div">
+          <h3>Connect on Social Media</h3>
+          <div class="social-icons">
+            <a href="https://chat.whatsapp.com/De7rsRX3nt2KRJdq7XFkIR" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://facebook.com/priscillanwabuowan" target="_blank">
+              <i class="fab fa-facebook"></i>
+              <a href="https://t.me/+Y1ogf_mqOgA2NDRk" target="_blank">
+                <i class="fab fa-telegram"></i></a>
+
+            </a>
+            <a href="https://instagram.com/just_us_teenspodacst" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <p class="pp"> &copy; goingbeyondrelationship</p>
+    </section>
+   
+  
+  </footer>
+
+<!-- Include the combined script file -->
+<script src="gbr.js"></script>
+</body>
+</html>
+
+
