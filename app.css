@@ -212,14 +212,14 @@ nav .mainMenu .closeMenu,
   }
 
   .go {
-    font-size: 2.5em; /* Adjust font size for smaller screens */
-    margin-left: 0; /* Center text on smaller screens */
+    font-size: 2.3em; /* Adjust font size for smaller screens */
+    margin-left: 3%; /* Center text on smaller screens */
     
   }
 
   .matt {
     font-size: 0.8em; /* Adjust font size for smaller screens */
-    margin-left: 5%; /* Adjust margin for smaller screens */
+    margin-left: 3%; /* Adjust margin for smaller screens */
   }
 
   .kng {
@@ -228,7 +228,7 @@ nav .mainMenu .closeMenu,
   }
 
   .text-container {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
   }
 }
