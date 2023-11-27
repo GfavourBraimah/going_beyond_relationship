@@ -212,7 +212,7 @@ nav .mainMenu .closeMenu,
   }
 
   .go {
-    font-size: 3em; /* Adjust font size for smaller screens */
+    font-size: 2.5em; /* Adjust font size for smaller screens */
     margin-left: 0; /* Center text on smaller screens */
     
   }
