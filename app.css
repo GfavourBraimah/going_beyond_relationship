@@ -12,6 +12,7 @@ body{
   font-family: 'Vesper Libre', serif;
   color: #A52A2A;
   
+  
     
     
 }
@@ -145,89 +146,92 @@ nav .mainMenu .closeMenu,
 
 
   /* Styles for larger screens */
-.strapline-text {
-  text-transform: uppercase;
-  position: absolute;
-  text-align: center;
-  margin: 400px auto;
-  margin-left: 200px;
-  font-family: 'Playfair Display', serif;
-  color: #00045e;
-}
 
 .strapline-container {
   background-image: url(./images/header2.jpg);
   background-position: center;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
-.go {
+
+.cont {
+  position: relative;
+  height: 450px; /* Set the height of your image container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+}
+
+.go{
+  margin-top: 300px;
   font-size: 5em;
   font-family: 'DM Serif Display', serif;
   font-weight: bold;
-  margin-top: 60px;
-
-  text-align: center;
-  color: #fff;
 }
 
-.matt {
+.matt{
   font-size: 1.6em;
   font-family: 'Roboto', sans-serif;
   font-family: 'Playfair Display', serif;
- margin-top: 30px;
-  color: white;
 }
 
-.kng {
-  font-size: 1.8em;
+.kng{
+ font-size: 1.8em;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: white;
   font-family: 'Playfair Display', serif;
+}
 
+.text-container {
+  text-align: center;
+  top: 30rem;
+  
+}
+
+.go,
+.matt,
+.kng {
+  color: white; /* Set the text color */
+  margin: 0; /* Remove default margin */
 }
 
 
 
 /* Media query for smaller screens */
 @media only screen and (max-width: 768px) {
-  .strapline-text {
-    margin: 400px auto; 
-    margin-left: 20px; 
-    padding-bottom: 5px;
-    margin-bottom: 100px;
-    margin-top: 50px;
-    padding-top: 10px;
-
   
+   .cont {
+    margin-top: 30px; /* Adjust as needed */
+    margin-left: 10px; /* Adjust as needed */
+  position: absolute;
   }
 
   .go {
-    
-    font-size: 2.3em; 
-    margin-left: 10px;
-   
+    font-size: 3em; /* Adjust font size for smaller screens */
+    margin-left: 0; /* Center text on smaller screens */
     
   }
 
   .matt {
-    font-size: 1em;
-    margin-left: 20px; 
-    margin-right: 10px;
-    
+    font-size: 0.8em; /* Adjust font size for smaller screens */
+    margin-left: 5%; /* Adjust margin for smaller screens */
   }
 
   .kng {
-    font-size: 1.2em; 
-    margin-left: 20px; 
-    margin-bottom: 40px;
+    font-size: 1em; /* Adjust font size for smaller screens */
+    margin-left: 2%; /* Adjust margin for smaller screens */
   }
 
+  .text-container {
+  padding-bottom: 200px;
 
-   
+  }
+}
 
    .service-note {
     margin-left: 0;
@@ -257,36 +261,7 @@ nav .mainMenu .closeMenu,
   }
 
 
-  }
 
-  @media only screen and (max-width: 786px){
-    .strapline-text {
-      margin: 400px auto; 
-      margin-left: 20px; 
-      text-align: center;
-    }
-  
-    .go {
-      font-size: 2.1em; 
-      
-    }
-  
-    .matt {
-      font-size: 1em;
-      margin-left: 20px; 
-      margin-right: 10px;
-      
-    }
-  
-    .kng {
-      font-size: 1.2em; 
-      margin-left: 20px; 
-    }
-  
-  
-     
-  
-  }
   .kng-container {
     background: rgba(0, 0, 0, 0.7);
     padding: 8px; 
@@ -324,7 +299,7 @@ nav .mainMenu .closeMenu,
     text-align: justify;
     
     color: #A52A2A;
-    line-height: 220%; 
+    
     width: 100%; 
     
     
@@ -598,12 +573,6 @@ margin-bottom: 30px;
 
   .contact-div {
     margin-top: 50px;
-  }
-}
-
-@media only screen and (max-width: 1024px) {
-  .about-section{
-    width: 100%;
   }
 }
 
