@@ -216,7 +216,7 @@ nav .mainMenu .closeMenu,
     font-size: 2.3em; /* Adjust font size for smaller screens */
     margin-left: 2%; /* Center text on smaller screens */
     padding-right: 12px;
-    
+    color: #f0f0f0;
   }
 
   .matt {
@@ -228,6 +228,7 @@ nav .mainMenu .closeMenu,
     font-size: 1.2em; /* Adjust font size for smaller screens */
     margin-left: 2%; /* Adjust margin for smaller screens */
     padding-right: 12px;
+    color: #f0f0f0;
   }
 
   .text-container {
