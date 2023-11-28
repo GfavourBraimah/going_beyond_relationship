@@ -125,7 +125,6 @@ nav .mainMenu .closeMenu,
   nav .openMenu {
     display: block;
     margin-left: 220px;
-  
   }
 
   nav .mainMenu li {
@@ -239,13 +238,10 @@ nav .mainMenu .closeMenu,
   }
 
   .sec-img{
-    width: 80%;
-    
+    width: 85%;
+    padding-left: 20px;
   }
   
-  .grid-item{
-    margin: 10px;
-  }
 }
 
    .service-note {
@@ -253,7 +249,11 @@ nav .mainMenu .closeMenu,
     width: 100%; 
   }
 
-  
+  .grid-item {
+    width: 100%; 
+    max-width: none; 
+  }
+
   .des{
     width: 100%;
     padding-top: 20px;
@@ -388,7 +388,6 @@ nav .mainMenu .closeMenu,
   display: inline-block;
   margin: 30px;
   padding: auto;
-  margin-left: 45px;
   overflow: hidden;
   font-family: 'Vesper Libre', serif;
 }
@@ -585,18 +584,3 @@ margin-bottom: 30px;
   }
 }
 
-@media only screen and (min-width: 600px) {
-.grid-item{
-  margin-left: 140px;
-}
-  }
-
-  @media only screen and (min-width: 820px){
-    .grid-item{
-      margin: 30px;
-      
-    }
-  
-  }
-  
-  
