@@ -21,7 +21,7 @@ const app = Vue.createApp({
           description: `Get trained in having the accurate knowledge in regards to relationships and marriage.
           Additionally, this training will launch you as a certified counselor should you have a calling and path in counseling.
           And lastly, you'll be under a month (free) internship program to showcase what and how much you've learned.`,
-          url: 'https://mainstack.store/gbr/2HxVbG3qhfLQ',
+          url: 'https://mainstack.store/gbr1/lvAEaqyDRkUH',
           showDescription: false,
         },
         {
@@ -31,7 +31,7 @@ const app = Vue.createApp({
            for marriage or understand how to be ready for marriage, is a major reason why this course has been created.
           I want to see that young people are able to understand and accurately know His will and walk in it. This
            course is timeless and resourceful in helping any single, and young person prepare adequately for marriage..`,
-          url: 'https://mainstack.store/gbr/FyTgc7DG_NjY',
+          url: 'https://mainstack.store/gbr1/yaCDb1ByzbsB',
           showDescription: false,
           
         },
@@ -54,7 +54,7 @@ const app = Vue.createApp({
           This is strategically designed to help you heal from past hurt, abuse, trauma
           and embrace a new beginning and future in Christ to have healthy and happy relationships.  
           `,
-          url: 'https://mainstack.store/gbr/FyTgc7DG_NjY',
+          url: 'https://mainstack.store/gbr1/SKcgqlvu5f1l',
           showDescription: false,
           
         },
