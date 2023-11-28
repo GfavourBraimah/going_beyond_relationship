@@ -25,7 +25,7 @@ const app = Vue.createApp({
           showDescription: false,
         },
         {
-          name: 'Marraige Preperatory Course',
+          name: ' Marriage Preperatory Course',
           image: './images/pro3.jpg',
           description: `Having received messages from across a number of young people asking about how they can be prepared
            for marriage or understand how to be ready for marriage, is a major reason why this course has been created.
