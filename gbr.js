@@ -50,17 +50,7 @@ const app = Vue.createApp({
           showDescription: false,
           
         },
-        {
-          name: 'Recovery and Accountability session',
-          image: './images/rec.jpg',
-          description: `
-          This is strategically designed to help you heal from past hurt, abuse, trauma
-          and embrace a new beginning and future in Christ to have healthy and happy relationships.  
-          `,
-          url: 'https://mainstack.store/gbr1/SKcgqlvu5f1l',
-          showDescription: false,
-          
-        },
+        
       ],
       podcast:'PODCASTS',
       podNote: `
@@ -72,13 +62,7 @@ Immerse yourself in enriching discussions on relationships, faith, and purpose
 
       `,
       podcasts: [
-        {
-          name: 'Dealing With Your Sexuality Struggle',
-          image: './images/dealing.jpg',
-          description: 'But when you ask God for something, you must trust him completely. Do not have other ideas in your mind. People who are not sure that God will help them are like the waves in the sea. The wind blows the water one way and then it blows the water another way. A person who is like that never knows what to do. He has many ideas in his mind. He should not think that he will receive anything from the Lord.',
-          url: 'https://podcasters.spotify.com/pod/show/priscilla-eziwan/episodes/Dealing-With-Your-Sexuality-Struggle-e29m38o',
-          showDescription: false,
-        },
+        
         {
           name: 'Low self-esteem',
           image: './images/Low.jpg',
@@ -87,12 +71,13 @@ Immerse yourself in enriching discussions on relationships, faith, and purpose
           showDescription: false,
         },
         {
-          name: 'Purity: Wholesome Sexuality',
-          image: './images/Purity.jpg',
-          description: 'because it is written, “You shall be holy (set apart), for I am holy." ',
-          url: 'https://podcasters.spotify.com/priscilla-eziwan/episodes/Purity-Wholesome-Sexuality-e2aiiet',
+          name: 'Dealing With Your Sexuality Struggle',
+          image: './images/dealing.jpg',
+          description: 'But when you ask God for something, you must trust him completely. Do not have other ideas in your mind. People who are not sure that God will help them are like the waves in the sea. The wind blows the water one way and then it blows the water another way. A person who is like that never knows what to do. He has many ideas in his mind. He should not think that he will receive anything from the Lord.',
+          url: 'https://podcasters.spotify.com/pod/show/priscilla-eziwan/episodes/Dealing-With-Your-Sexuality-Struggle-e29m38o',
           showDescription: false,
         },
+       
         {
           name: 'Youthful Exuberance!',
           image: './images/Youth.jpg',
@@ -100,7 +85,8 @@ Immerse yourself in enriching discussions on relationships, faith, and purpose
           url: 'https://podcasters.spotify.com/pod/show/priscilla-eziwan/episodes/Youthful-Exuberance-e19s8aa',
           showDescription: false,
         },
-        // Add more podcasts as needed
+        
+        
       ],
       currentServiceImg: 0,
       serviceSliderTimeout: null,
