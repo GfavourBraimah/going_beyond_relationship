@@ -17,33 +17,31 @@ const app = Vue.createApp({
       services: [
         {
           name: 'Mentorship Training',
-          image: './images/pro1.jpg',
+          image: './images/men.jpg',
           description: `Get trained in having the accurate knowledge in regards to relationships and marriage.
           Additionally, this training will launch you as a certified counselor should you have a calling and path in counseling.
           And lastly, you'll be under a month (free) internship program to showcase what and how much you've learned.`,
-          url: 'https://mainstack.store/gbr/2HxVbG3qhfLQ',
+          url: 'https://mainstack.store/gbr1/lvAEaqyDRkUH',
           showDescription: false,
         },
         {
-          name: 'Maraige Preperatory Course',
+          name: 'Marriage Preperatory Course',
           image: './images/pro3.jpg',
           description: `Having received messages from across a number of young people asking about how they can be prepared
            for marriage or understand how to be ready for marriage, is a major reason why this course has been created.
           I want to see that young people are able to understand and accurately know His will and walk in it. This
            course is timeless and resourceful in helping any single, and young person prepare adequately for marriage..`,
-          url: 'https://mainstack.store/gbr/FyTgc7DG_NjY',
+           url: 'https://mainstack.store/gbr1/yaCDb1ByzbsB',
           showDescription: false,
           
         },
         {
           name: 'Counseling Services',
-          image: './images/pro2.jpg',
+          image: './images/col.jpg',
           description: `
-          Weekly Marital Confessions ebook is a powerful tool to empower singles make bold confessions for their marriages to reconnect their hearts to love, be free from gamophobia and receive heal
-          ing from past hurtful relationships into the marriage of their dreams godly 
-          and beautiful. The married can get it as well to rekindle their marital confessions.
+          Get the best professional and biblical counseling to help you get well prepared for marriage and to help keep your marriage striving.
           .`,
-          url: 'https://mainstack.store/gbr/WiftTTXFg3wV',
+          url: 'https://mainstack.store/gbr1/-l5DDpxXmfpX',
           showDescription: false,
           
         },
