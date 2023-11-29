@@ -124,7 +124,7 @@ nav .mainMenu .closeMenu,
 
   nav .openMenu {
     display: block;
-    margin-left: 250px;
+    margin-left: 220px;
   }
 
   nav .mainMenu li {
@@ -573,7 +573,7 @@ margin-bottom: 30px;
   box-sizing: border-box; 
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 800px) {
   .grid-item {
     width: 100%; 
     margin: 10px; 
