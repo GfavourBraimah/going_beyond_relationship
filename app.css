@@ -106,8 +106,45 @@ nav .mainMenu {
   display: none;
 }
 
+
 nav .mainMenu.active {
   display: flex;
+  nav .mainMenu.active {
+    display: flex;
+    
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    top: 20px;
+    right: 20px;
+    position: absolute;
+
+  }
+ nav.logo{
+  margin: 0;
+ }
+
+  nav .openMenu {
+    display: block;
+    margin-left: 220px;
+  }
+
+  nav .mainMenu li {
+    margin: 15px 0;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: #724e1a;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+  
+
   
 }
 
@@ -580,13 +617,21 @@ padding-left: 40px;
 box-sizing: border-box; 
 }
 
+
 @media only screen and (max-width: 820px) {
 .grid-item {
   width: 80%; 
-  margin: 10px; 
+  margin: 10px; }
+
   
 }
 
+@media only screen and (max-width: 800px) {
+  .grid-item {
+    width: 90%; 
+    margin: 10px; 
+    
+  }
 }
 
 
