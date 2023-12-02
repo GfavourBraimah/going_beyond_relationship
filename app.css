@@ -95,7 +95,7 @@ display: none;
 
 @media only screen and (max-width: 780px) {
 nav .mainMenu {
-  height: 100vh;
+  height:50vh;
   width: 100%;
   flex-direction: column;
   position: fixed;
@@ -189,7 +189,7 @@ background-image: url(./images/header2.jpg);
 background-position: center;
 background-size: cover;
 width: 100%;
-height: 100vh;
+height: 80vh;
 }
 
 
@@ -205,7 +205,7 @@ height: 100%;
 
 .go{
 margin-top: 300px;
-font-size: 5em;
+font-size: 4em;
 font-family: 'DM Serif Display', serif;
 font-weight: bold;
 }
@@ -240,7 +240,7 @@ margin: 0;
 
 
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 768px) {
 
  .cont {
   margin-top: 30px; 
@@ -270,7 +270,7 @@ position: absolute;
 }
 
 .text-container {
-padding-bottom: 140px;
+padding-bottom: 235px;
 
 
 }
@@ -281,7 +281,7 @@ padding-bottom: 140px;
 }
 
 .strapline-container{
-  height: 90vh;
+  height: 80vh;
   width: 100%;
 
 }
@@ -509,18 +509,11 @@ margin-top: 30px;
   font-size: 20px;
 }
 
-#veiw{
-text-decoration: none;
-font-size: 20px;
-margin-left: 0rem;
-color: goldenrod;
-transition: color 0.3s ease-in-out;
-}
 
 .contact-section {
 display: flex;
 justify-content: space-around;
-height: 70vh;
+height: 50vh;
 width: 100%;
 
 
@@ -564,7 +557,7 @@ color: #724e1a;
 .contact-div button {
 background-color: #8B4513;;
 color: #fff;
-padding: 12px 24px;
+padding: 12px 24px ;
 border: none;
 border-radius: 5px;
 cursor: pointer;
@@ -646,4 +639,6 @@ box-sizing: border-box;
   
 }
 
+
 }
+
