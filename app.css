@@ -95,7 +95,7 @@ display: none;
 
 @media only screen and (max-width: 780px) {
 nav .mainMenu {
-  height:50vh;
+  height:100vh;
   width: 100%;
   flex-direction: column;
   position: fixed;
@@ -513,7 +513,7 @@ margin-top: 30px;
 .contact-section {
 display: flex;
 justify-content: space-around;
-height: 50vh;
+height: 60vh;
 width: 100%;
 
 
